@@ -6,7 +6,7 @@ import { TOTAL_QUESTIONS } from '../data/questions.js'
 const facts = [
   { n: '30', label: 'Questions', text: 'Multiple choice, one at a time, four options each.' },
   { n: '~15', label: 'Minutes', text: 'Go at your own pace. Progress is kept if you close the tab.' },
-  { n: '0', label: 'Data collected', text: 'Scored in your browser. No accounts, no servers, no tracking.' },
+  { n: '1', label: 'Mark per question', text: 'Every correct answer scores one mark. Your result appears as soon as you submit.' },
 ]
 
 const topics = [
@@ -37,14 +37,14 @@ export default function Home() {
           />
         </div>
         <div className="container-page relative z-10 flex min-h-[640px] flex-col justify-end pb-16 pt-[330px] sm:min-h-[720px] sm:pt-[400px] lg:min-h-[calc(100dvh-72px)] lg:pb-24 lg:pt-[440px]">
-          <p className="eyebrow">An assessment on human oversight of AI agents</p>
+          <p className="eyebrow">A 30-question assessment</p>
           <h1 className="mt-5 max-w-[16ch] font-display text-[48px] leading-[0.98] sm:text-[72px] lg:text-[84px]">
-            Keep a person <br className="hidden sm:block" /><em>in the loop.</em>
+            Human-in-the-loop <br className="hidden sm:block" /><em>controls.</em>
           </h1>
           <div className="mt-8 grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
             <p className="max-w-[46ch] text-[17px] leading-relaxed text-mist sm:text-[19px]">
-              Thirty questions on approvals, audit trails, escalation and the quiet ways oversight
-              fails. Find out how well you know the practice — privately, in your own browser.
+              Thirty questions on approvals, audit trails, escalation and the quiet ways human
+              controls on AI agents fail. Find out how well you know the practice — privately, in your own browser.
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">
               {inProgress ? (

@@ -1,6 +1,6 @@
 # LOREMipsum — Assessment
 
-A 30-question assessment on human oversight of AI agents. React + Vite + Tailwind CSS, frontend only.
+A 30-question assessment on human-in-the-loop controls for AI agents. React + Vite + Tailwind CSS, frontend only.
 
 ## Privacy
 
