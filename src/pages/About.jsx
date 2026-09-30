@@ -27,7 +27,7 @@ export default function About() {
         <WaveArt className="absolute inset-x-0 bottom-0 h-[220px] w-full opacity-60" count={40} seed={2.4} />
         <div className="container-page relative pt-16 pb-40 sm:pt-24 sm:pb-52">
           <p className="eyebrow">About</p>
-          <h1 className="mt-6 max-w-[16ch] font-serif text-[52px] leading-[0.98] tracking-[-0.02em] sm:text-[80px]">
+          <h1 className="mt-6 max-w-[16ch] font-display text-[52px] leading-[0.98] sm:text-[80px]">
             A short test of a <em>long-term</em> habit.
           </h1>
         </div>
@@ -61,7 +61,7 @@ export default function About() {
                 className={`border-b border-line py-10 sm:py-12 ${i % 2 === 1 ? 'sm:border-l sm:pl-10' : 'sm:pr-10'} ${i >= 2 ? 'sm:border-b-0' : ''}`}
               >
                 <p className="text-[13px] text-mist tabular-nums">{String(i + 1).padStart(2, '0')}</p>
-                <h2 className="mt-4 font-serif text-[30px] leading-tight">{p.title}</h2>
+                <h2 className="mt-4 font-display text-[30px] leading-tight">{p.title}</h2>
                 <p className="mt-3 max-w-[42ch] text-[15px] leading-relaxed text-mist">{p.text}</p>
               </li>
             ))}
@@ -71,7 +71,7 @@ export default function About() {
 
       <section className="border-t border-line">
         <div className="container-page flex flex-col gap-8 py-20 sm:flex-row sm:items-end sm:justify-between sm:py-24">
-          <p className="max-w-[20ch] font-serif text-[36px] leading-[1.05] sm:text-[48px]">
+          <p className="max-w-[20ch] font-display text-[36px] leading-[1.05] sm:text-[48px]">
             Ready when you are.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">

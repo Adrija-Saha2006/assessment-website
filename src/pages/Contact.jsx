@@ -30,7 +30,7 @@ export default function Contact() {
     <section className="container-page grid gap-16 py-16 sm:py-24 lg:grid-cols-[1fr_1.2fr] lg:gap-24">
       <div>
         <p className="eyebrow">Contact</p>
-        <h1 className="mt-6 font-serif text-[52px] leading-[0.98] tracking-[-0.02em] sm:text-[80px]">
+        <h1 className="mt-6 font-display text-[52px] leading-[0.98] sm:text-[80px]">
           Say <em>hello.</em>
         </h1>
         <p className="mt-8 max-w-[38ch] text-[17px] leading-relaxed text-mist">

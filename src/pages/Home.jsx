@@ -25,12 +25,23 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="relative overflow-hidden">
-        <div className="container-page relative z-10 pt-16 pb-10 sm:pt-24 lg:pt-28">
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-[430px] sm:h-[520px] lg:h-[600px]">
+          <WaveArt
+            className="wave-in h-full w-full"
+            count={52}
+            height={560}
+            amplitude={0.26}
+            thickness={4.2}
+            strokeWidth={1}
+            layered
+          />
+        </div>
+        <div className="container-page relative z-10 flex min-h-[640px] flex-col justify-end pb-16 pt-[330px] sm:min-h-[720px] sm:pt-[400px] lg:min-h-[calc(100dvh-72px)] lg:pb-24 lg:pt-[440px]">
           <p className="eyebrow">An assessment on human oversight of AI agents</p>
-          <h1 className="mt-6 max-w-[14ch] font-serif text-[56px] leading-[0.95] tracking-[-0.02em] sm:text-[84px] lg:text-[112px]">
-            Keep a person <em className="text-paper/90">in the loop.</em>
+          <h1 className="mt-5 max-w-[16ch] font-display text-[48px] leading-[0.98] sm:text-[72px] lg:text-[84px]">
+            Keep a person <br className="hidden sm:block" /><em>in the loop.</em>
           </h1>
-          <div className="mt-10 grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
+          <div className="mt-8 grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
             <p className="max-w-[46ch] text-[17px] leading-relaxed text-mist sm:text-[19px]">
               Thirty questions on approvals, audit trails, escalation and the quiet ways oversight
               fails. Find out how well you know the practice — privately, in your own browser.
@@ -57,10 +68,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        <div className="relative -mt-6 h-[280px] sm:-mt-10 sm:h-[380px] lg:-mt-24 lg:h-[480px]">
-          <WaveArt className="wave-in absolute inset-0 h-full w-full" />
-        </div>
       </section>
 
       {/* Facts */}
@@ -71,7 +78,7 @@ export default function Home() {
               key={f.label}
               className={`py-10 md:py-14 ${i > 0 ? 'border-t border-line md:border-t-0 md:border-l md:pl-10' : ''} ${i < 2 ? 'md:pr-10' : ''}`}
             >
-              <p className="font-serif text-[64px] leading-none tabular-nums">{f.n}</p>
+              <p className="font-display text-[64px] leading-none tabular-nums">{f.n}</p>
               <p className="mt-4 eyebrow">{f.label}</p>
               <p className="mt-3 max-w-[32ch] text-[15px] leading-relaxed text-mist">{f.text}</p>
             </div>
@@ -83,7 +90,7 @@ export default function Home() {
       <section className="container-page grid gap-12 py-20 sm:py-28 lg:grid-cols-[1fr_1.3fr] lg:gap-24">
         <div>
           <p className="eyebrow">What it covers</p>
-          <h2 className="mt-5 font-serif text-[40px] leading-[1.02] tracking-[-0.01em] sm:text-[56px]">
+          <h2 className="mt-5 font-display text-[40px] leading-[1.02] sm:text-[56px]">
             The practical side of <em>staying in charge.</em>
           </h2>
         </div>
@@ -102,7 +109,7 @@ export default function Home() {
         <div className="container-page grid gap-12 py-20 sm:py-28 lg:grid-cols-2 lg:gap-24">
           <div>
             <p className="eyebrow">Privacy, plainly</p>
-            <p className="mt-5 max-w-[34ch] font-serif text-[30px] leading-[1.15] sm:text-[38px]">
+            <p className="mt-5 max-w-[34ch] font-display text-[30px] leading-[1.15] sm:text-[38px]">
               Your answers never leave this device. There is no one on the other end — only you
               see your score.
             </p>

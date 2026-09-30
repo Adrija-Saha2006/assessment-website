@@ -22,7 +22,7 @@ function Intro({ onBegin, hasResult }) {
         <WaveArt className="absolute inset-x-0 bottom-0 h-[200px] w-full opacity-50" count={36} seed={0.6} />
         <div className="container-page relative pt-16 pb-36 sm:pt-24 sm:pb-48">
           <p className="eyebrow">The assessment</p>
-          <h1 className="mt-6 max-w-[15ch] font-serif text-[52px] leading-[0.98] tracking-[-0.02em] sm:text-[80px]">
+          <h1 className="mt-6 max-w-[15ch] font-display text-[52px] leading-[0.98] sm:text-[80px]">
             Thirty questions. <em>Your pace.</em>
           </h1>
         </div>
@@ -166,7 +166,7 @@ function QuestionView() {
         <h1
           ref={headingRef}
           tabIndex={-1}
-          className="mt-12 font-serif text-[32px] leading-[1.1] tracking-[-0.01em] outline-none sm:mt-16 sm:text-[44px] lg:text-[52px]"
+          className="mt-12 font-display text-[32px] leading-[1.1] outline-none sm:mt-16 sm:text-[44px] lg:text-[52px]"
         >
           <span className="sr-only">Question {index + 1} of {TOTAL_QUESTIONS}: </span>
           {question.prompt}

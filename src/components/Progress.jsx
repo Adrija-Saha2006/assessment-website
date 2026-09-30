@@ -5,7 +5,7 @@ export default function Progress({ current, total, answered }) {
       <div className="flex items-baseline justify-between text-[13px]">
         <p aria-live="polite">
           <span className="sr-only">Question </span>
-          <span className="font-serif text-[28px] leading-none tabular-nums">{current}</span>
+          <span className="font-display text-[28px] leading-none tabular-nums">{current}</span>
           <span className="text-mist"> / {total}</span>
         </p>
         <p className="text-mist tabular-nums">{answered} answered</p>

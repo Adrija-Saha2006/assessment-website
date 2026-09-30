@@ -10,7 +10,7 @@ function Stat({ label, value, className = '' }) {
   return (
     <div className={`py-6 ${className}`}>
       <dt className="eyebrow">{label}</dt>
-      <dd className="mt-3 font-serif text-[44px] leading-none tabular-nums sm:text-[52px]">{value}</dd>
+      <dd className="mt-3 font-display text-[44px] leading-none tabular-nums sm:text-[52px]">{value}</dd>
     </div>
   )
 }
@@ -20,7 +20,7 @@ function NoResult() {
   return (
     <section className="container-page flex flex-1 flex-col justify-center py-24">
       <p className="eyebrow">Results</p>
-      <h1 className="mt-5 max-w-[16ch] font-serif text-[52px] leading-[0.98] sm:text-[72px]">
+      <h1 className="mt-5 max-w-[16ch] font-display text-[52px] leading-[0.98] sm:text-[72px]">
         No result <em>yet.</em>
       </h1>
       <p className="mt-6 max-w-[42ch] text-[17px] leading-relaxed text-mist">
@@ -63,13 +63,13 @@ export default function Results() {
         <div className="container-page relative pt-14 pb-12 sm:pt-20">
           <p className="eyebrow">Your result · {submitted}</p>
           <div className="mt-8 grid gap-10 lg:grid-cols-[auto_1fr] lg:items-end lg:gap-20">
-            <h1 className="font-serif leading-[0.85] tracking-[-0.03em]">
+            <h1 className="font-display leading-[0.85]">
               <span className="sr-only">Score: </span>
               <span className="text-[128px] tabular-nums sm:text-[176px] lg:text-[208px]">{score.correctCount}</span>
               <span className="text-[48px] text-mist sm:text-[64px]"> / {score.total}</span>
             </h1>
             <div className="max-w-[44ch] lg:pb-6">
-              <p className="font-serif text-[34px] leading-tight sm:text-[40px]">{message.title}</p>
+              <p className="font-display text-[34px] leading-tight sm:text-[40px]">{message.title}</p>
               <p className="mt-3 text-[16px] leading-relaxed text-mist sm:text-[17px]">{message.body}</p>
             </div>
           </div>

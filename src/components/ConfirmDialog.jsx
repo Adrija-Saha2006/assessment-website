@@ -26,7 +26,7 @@ export default function ConfirmDialog({ open, title, children, confirmLabel, can
       className="m-auto w-[calc(100%-2.5rem)] max-w-[520px] border border-line-strong bg-ink p-0 text-paper"
     >
       <div className="p-7 sm:p-9">
-        <h2 id="confirm-title" className="font-serif text-[34px] leading-[1.05] tracking-[-0.01em]">
+        <h2 id="confirm-title" className="font-display text-[34px] leading-[1.05]">
           {title}
         </h2>
         <div className="mt-4 text-[15px] leading-relaxed text-mist">{children}</div>

@@ -30,7 +30,7 @@ export default function AnswerReview({ review }) {
       <div className="flex flex-col gap-6 border-b border-line pb-6 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <p className="eyebrow">Answer review</p>
-          <h2 id="review-title" className="mt-3 font-serif text-[40px] leading-none tracking-[-0.01em] sm:text-[52px]">
+          <h2 id="review-title" className="mt-3 font-display text-[40px] leading-none sm:text-[52px]">
             Every question, <em>reviewed</em>
           </h2>
         </div>
@@ -59,7 +59,7 @@ export default function AnswerReview({ review }) {
         <ol>
           {items.map((r) => (
             <li key={r.id} className="grid gap-4 border-b border-line py-8 md:grid-cols-[80px_1fr_120px] md:gap-8">
-              <p className="font-serif text-[28px] leading-none text-mist tabular-nums">
+              <p className="font-display text-[28px] leading-none text-mist tabular-nums">
                 {String(r.id).padStart(2, '0')}
               </p>
               <div>

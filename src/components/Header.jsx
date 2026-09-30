@@ -11,8 +11,8 @@ const links = [
 export function Brand() {
   return (
     <Link to="/" className="text-[19px] tracking-[-0.02em]" aria-label="LOREMipsum — home">
-      <span className="font-semibold">LOREM</span>
-      <span className="font-serif text-[22px] italic">ipsum</span>
+      <span className="font-bold">LOREM</span>
+      <span className="font-semibold">ipsum</span>
     </Link>
   )
 }
@@ -85,7 +85,7 @@ export default function Header() {
                 to={l.to}
                 end={l.end}
                 className={({ isActive }) =>
-                  `flex items-baseline justify-between py-4 font-serif text-[30px] leading-none ${isActive ? 'text-paper' : 'text-mist'}`
+                  `flex items-baseline justify-between py-4 font-display text-[30px] leading-none ${isActive ? 'text-paper' : 'text-mist'}`
                 }
               >
                 {l.label}
