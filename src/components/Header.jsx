@@ -10,9 +10,9 @@ const links = [
 
 export function Brand() {
   return (
-    <Link to="/" className="text-[19px] tracking-[-0.02em]" aria-label="LOREMipsum — home">
-      <span className="font-bold">LOREM</span>
-      <span className="font-semibold">ipsum</span>
+    <Link to="/" className="whitespace-nowrap text-[16px] tracking-[-0.02em] sm:text-[19px]" aria-label="Human in the loop controls — home">
+      <span className="font-bold">Human in the loop</span>{' '}
+      <span className="font-normal text-mist">controls</span>
     </Link>
   )
 }

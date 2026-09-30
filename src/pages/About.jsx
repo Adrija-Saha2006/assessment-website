@@ -45,7 +45,7 @@ export default function About() {
             nobody answers.
           </p>
           <p>
-            LOREMipsum is a compact way to check how well you know those decisions. It is useful for
+            Human in the loop controls is a compact way to check how well you know those decisions. It is useful for
             engineers building agents, the people reviewing their output, and anyone writing the
             policies in between.
           </p>

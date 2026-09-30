@@ -19,7 +19,7 @@ export default function Contact() {
     }
     setError('')
     const params = new URLSearchParams({
-      subject: subject.trim() || 'Hello from the LOREMipsum site',
+      subject: subject.trim() || 'Hello from the Human in the loop controls site',
       body: message.trim(),
     })
     // URLSearchParams encodes spaces as "+", which mail clients show literally.

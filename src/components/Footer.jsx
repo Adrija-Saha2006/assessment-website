@@ -31,7 +31,7 @@ export default function Footer() {
       </div>
       <div className="container-page">
         <div className="flex flex-col gap-2 border-t border-line py-6 text-[12px] text-faint sm:flex-row sm:justify-between">
-          <span>© {new Date().getFullYear()} LOREMipsum</span>
+          <span>© {new Date().getFullYear()} Human in the loop controls</span>
           <span>Made with care. Calculated locally.</span>
         </div>
       </div>

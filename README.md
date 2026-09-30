@@ -1,4 +1,4 @@
-# LOREMipsum — Assessment
+# Human in the loop controls — Assessment
 
 A 30-question assessment on human-in-the-loop controls for AI agents. React + Vite + Tailwind CSS, frontend only.
 
